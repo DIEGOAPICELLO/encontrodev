@@ -7,7 +7,7 @@ import entities.Produtos;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Objeto {
+public class CriarProduto {
 
     public Produtos criarProduto(String name, double preco, Categoria cat, Unidade un) {
 
