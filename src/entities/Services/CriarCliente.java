@@ -9,14 +9,31 @@ public class CriarCliente {
 
     public Clientes criarCliente (String name, String email, String CPF, String telefone, Cidade cidade) {
 
-        Clientes clientes = new Clientes();
-        clientes.setName(name);
-        clientes.setEmail(email);
-        clientes.setCPF(CPF);
-        clientes.setTelefone(telefone);
-        clientes.setCidade(cidade);
+        if (CPF.length() == 11) {
 
-        return clientes;
+            Clientes clientes = new Clientes();
+            clientes.setName(name);
+            clientes.setEmail(email);
+            clientes.setCPF(CPF);
+            clientes.setTelefone(telefone);
+            clientes.setCidade(cidade);
+
+            return clientes;
+        } else {
+            System.out.println("O cliente : " + name + " está com o CPF invalido");
+        }
+        return new Clientes();
+    }
+
+    public List<Clientes> verificarListaClientes(List<Clientes> listaClientes) {
+
+        for (int i = 0; i < listaClientes.size(); i++) {
+            if (listaClientes.get(i).getName() == null) {
+                listaClientes.remove(i);
+
+            }
+        }
+        return listaClientes;
     }
 
     public void imprimeNaTelaClientes(List<Clientes> listaClientes) {
