@@ -53,9 +53,9 @@ public class Main {
 
         criarCliente.imprimeNaTelaClientes(listaClientes);
 
-        vendaProdutoList.add(new VendaProduto(produtoList.get(1), 3, 0));
-        vendaProdutoList.add(new VendaProduto(produtoList.get(2), 2, 0));
-        vendaProdutoList.add(new VendaProduto(produtoList.get(3), 6, 0));
+        vendaProdutoList.add(new VendaProduto(produtoList.get(1), 4, 0)); //4500
+        vendaProdutoList.add(new VendaProduto(produtoList.get(2), 2, 0)); //30
+        vendaProdutoList.add(new VendaProduto(produtoList.get(3), 6, 0)); //90
 
         criarVenda.criarVenda(vendaProdutoList);
 

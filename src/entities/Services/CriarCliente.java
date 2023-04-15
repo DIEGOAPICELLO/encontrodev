@@ -41,14 +41,11 @@ public class CriarCliente {
         System.out.println("Lista de clientes");
 
         for(int i = 0; i < listaClientes.size(); i++) {
-            System.out.println(listaClientes.get(i).getName());
-            System.out.println(listaClientes.get(i).getEmail());
-            System.out.println(listaClientes.get(i).getCPF());
-            System.out.println(listaClientes.get(i).getTelefone());
-            System.out.println(listaClientes.get(i).getCidade());
-
+            System.out.println(listaClientes.get(i).getName() + " , " +
+                    listaClientes.get(i).getEmail() + " , " +
+                    listaClientes.get(i).getCPF() + " , " +
+                    listaClientes.get(i).getTelefone() + " , " +
+                    listaClientes.get(i).getCidade());
         }
-
     }
-
 }

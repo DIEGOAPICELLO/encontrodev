@@ -9,7 +9,7 @@ import java.util.List;
 public class Vendas {
 
     double valorTotalCompra, troco, desconto;
-    LocalDateTime horario;
+    LocalDateTime horario = LocalDateTime.now();
 
     MetodoPagamento metodoPagamento;
     List<VendaProduto> vendaProdutoLista;
